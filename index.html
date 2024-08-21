@@ -45,12 +45,12 @@
 
   <!-- Full website with tailwind -->
 
-  <body>
+  <body class="bg-[#f4f4f4]">
     <header class="bg-gradient-to-b from-[#f4f4f4] to-white">
       <!-- Navbar -->
-      <nav class="container max-w-screen-xl py-4 mx-auto">
+      <nav class="container max-w-screen-xl px-2 py-4 mx-auto">
         <div class="navbar gap-4">
-          <div class="navbar-start">
+          <div class="navbar-start w-fit">
             <a
               class="text-nowrap md:text-3xl flex items-center text-2xl font-extrabold cursor-pointer"
               ><span
@@ -59,7 +59,7 @@
               >Rinterio</a
             >
           </div>
-          <div class="navbar-center lg:flex hidden">
+          <div class="navbar-center lg:flex hidden ml-auto">
             <ul class="menu menu-horizontal px-1">
               <li class="text-dark-3 font-extrabold"><a>Home</a></li>
               <li class="text-[#737373]"><a>Services</a></li>
@@ -68,7 +68,7 @@
               <li class="text-[#737373]"><a>Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex items-center space-x-4">
+          <div class="navbar-end w-fit lg:ml-8 flex items-center ml-auto space-x-4">
             <img
               src="icons/search.png"
               class="cursor-pointer hover:scale-110 transition size-10 opacity-60 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
@@ -95,7 +95,40 @@
       <!-- Navbar -->
 
       <!-- Hero Section -->
-      <section></section>
+      <section class="container max-w-screen-xl py-8 mx-auto">
+        <div class="space-y-6">
+          <div class="mx-auto">
+            <img src="assets/banner.png" class="w-auto h-full mx-auto" />
+          </div>
+          <div class="w-[90%] mx-auto">
+            <h1
+              class="text-dark-2 text-[1.75rem]/[28px] sm:text-5xl md:text-6xl font-[900] text-center tracking-tighter"
+            >
+              A barn house of this design has a striking appearance
+            </h1>
+          </div>
+          <div class="w-4/5 mx-auto">
+            <p
+              class="text-dark-3 leading-[24px] sm:leading-normal text-base font-medium text-center"
+            >
+              The barn house captivates with its blend of rustic charm and modern sophistication,
+              featuring weathered wood, sleek metal accents, and large windows that flood the space
+              with natural light.
+            </p>
+          </div>
+          <div>
+            <button
+              class="bg-primary/[.5] hover:bg-primary/[.8] transition flex items-center border border-primary rounded-full font-bold text-xl mx-auto pl-8 pr-2 py-3 justify-between gap-2"
+            >
+              View Details
+              <span
+                class="bg-primary size-8 flex items-center p-2 mr-2 scale-90 -rotate-45 rounded-full"
+                ><img src="icons/arrow-black.png" alt=""
+              /></span>
+            </button>
+          </div>
+        </div>
+      </section>
       <!-- Hero section ends -->
     </header>
     <main></main>
