@@ -1,9 +1,101 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <!-- !Font + VanillaCSS -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+
+    <!-- !DaisyUI + Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- !Fontawesome Kit -->
+    <script src="https://kit.fontawesome.com/380e6b993f.js" crossorigin="anonymous"></script>
+
+    <!-- !Tailwind Script -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "dark-1": "#1c1c1c",
+              "dark-2": "#212121",
+              "dark-3": "#494949",
+              primary: "#ABEF5F",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+
+  <!-- Full website with tailwind -->
+
+  <body>
+    <header class="bg-gradient-to-b from-[#f4f4f4] to-white">
+      <!-- Navbar -->
+      <nav class="mx-auto max-w-screen-xl w-[90%] pt-4">
+        <div class="navbar gap-4">
+          <div class="navbar-start">
+            <a
+              class="text-nowrap md:text-3xl flex items-center text-2xl font-extrabold cursor-pointer"
+              ><span
+                class="bg-primary size-10 flex items-center p-2 mr-2 scale-90 -rotate-45 rounded-full"
+                ><img src="icons/arrow-black.png" alt="" /></span
+              >Rinterio</a
+            >
+          </div>
+          <div class="navbar-center lg:flex hidden">
+            <ul class="menu menu-horizontal px-1">
+              <li class="text-dark-3 font-extrabold"><a>Home</a></li>
+              <li class="text-[#737373]"><a>Services</a></li>
+              <li class="text-[#737373]"><a>Portfolio</a></li>
+              <li class="text-[#737373]"><a>Blogs</a></li>
+              <li class="text-[#737373]"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end flex items-center gap-2">
+            <img
+              src="icons/search.png"
+              class="size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
+            />
+            <img
+              src="icons/cart.png"
+              class="size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
+            />
+            <a
+              class="sm:inline-block min-w-fit bg-primary rounded-[2rem] hidden px-5 py-3 text-xl font-extrabold"
+              >Book Consult</a
+            >
+            <img
+              src="icons/menu.png"
+              class="size-10 inline-block border-[1px] lg:hidden p-2 bg-white border-gray-200 rounded-full"
+            />
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+
+      <!-- Hero Section -->
+      <section></section>
+      <!-- Hero section ends -->
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
+
+  <!-- End of website -->
 </html>
