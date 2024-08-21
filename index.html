@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Rinterio</title>
 
     <!-- !Font + VanillaCSS -->
     <style>
@@ -47,7 +47,7 @@
   <body>
     <header class="bg-gradient-to-b from-[#f4f4f4] to-white">
       <!-- Navbar -->
-      <nav class="mx-auto max-w-screen-xl w-[90%] pt-4">
+      <nav class="container max-w-screen-xl py-4 mx-auto">
         <div class="navbar gap-4">
           <div class="navbar-start">
             <a
@@ -67,22 +67,26 @@
               <li class="text-[#737373]"><a>Contact Us</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex items-center gap-2">
+          <div class="navbar-end flex items-center space-x-4">
             <img
               src="icons/search.png"
-              class="size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
+              class="cursor-pointer hover:scale-110 transition size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
             />
             <img
               src="icons/cart.png"
-              class="size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
+              class="cursor-pointer hover:scale-110 transition size-10 sm:inline-block border-[1px] hidden p-2 bg-white border-gray-200 rounded-full"
             />
             <a
-              class="sm:inline-block min-w-fit bg-primary rounded-[2rem] hidden px-5 py-3 text-xl font-extrabold"
-              >Book Consult</a
-            >
+              class="hover:scale-105 sm:flex min-w-fit bg-primary items-center justify-between hidden gap-3 py-2 pl-5 pr-1 text-xl font-extrabold transition rounded-full cursor-pointer"
+              >Book Consult
+              <span
+                class="size-10 flex items-center p-2 mr-2 scale-90 -rotate-45 bg-black rounded-full"
+                ><img src="icons/arrow-white.png" alt="" class="inline"
+              /></span>
+            </a>
             <img
               src="icons/menu.png"
-              class="size-10 inline-block border-[1px] lg:hidden p-2 bg-white border-gray-200 rounded-full"
+              class="cursor-pointer hover:scale-110 transition size-10 inline-block border-[1px] lg:hidden p-2 bg-white border-gray-200 rounded-full"
             />
           </div>
         </div>
