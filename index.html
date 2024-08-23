@@ -22,9 +22,6 @@
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- !Fontawesome Kit -->
-    <script src="https://kit.fontawesome.com/380e6b993f.js" crossorigin="anonymous"></script>
-
     <!-- !Tailwind Script -->
     <script>
       tailwind.config = {
@@ -84,9 +81,21 @@
                 ><img src="icons/arrow-white.png" class="inline"
               /></span>
             </a>
-            <img
-              src="icons/menu.png"
-              class="cursor-pointer hover:scale-110 transition size-10 opacity-60 inline-block border-[1px] lg:hidden p-2 bg-white border-gray-200 rounded-full" />
+          </div>
+          <div
+            class="dropdown dropdown-end size-10 cursor-pointer inline-block border-[1px] lg:hidden p-2 bg-white border-gray-200 rounded-full">
+            <div tabindex="0" role="button" class="p-0 m-0">
+              <img src="icons/menu.png" class="size-full opacity-60 cursor-pointer" />
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu bg-white mt-6 rounded-box z-[1] w-52 p-2 shadow">
+              <li class="text-dark-3 font-extrabold"><a>Home</a></li>
+              <li class="text-[#737373]"><a>Services</a></li>
+              <li class="text-[#737373]"><a>Portfolio</a></li>
+              <li class="text-[#737373]"><a>Blogs</a></li>
+              <li class="text-[#737373]"><a>Contact Us</a></li>
+            </ul>
           </div>
         </div>
       </nav>
